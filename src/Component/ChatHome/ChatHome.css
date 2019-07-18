@@ -10,8 +10,9 @@
  
 
 }
-.Cuantos{
-     font-size: 20px;
+
+.TotalMensajes{
+     font-size: 14px;
      color: rgb(12, 74, 145);
 }
 .Cuerpo0{
@@ -75,7 +76,10 @@ padding-left: 10px;
     background: rgba(5, 170, 19, 0.788);
     border-radius: 20px;
   }
+  .Titulo{
 
+    font-size: 28px;
+  }
 .App-logoChat {
     animation: App-logo-spin infinite 20s linear;
     height: 10vmin;
@@ -91,7 +95,7 @@ padding-left: 10px;
   .camara {
     /* animation: App-logo-spin infinite 20s linear; */
 
-    height: 4vmin;
+    height: 5vmin;
     pointer-events: none;
   }
   .upload-btn-wrapper {

@@ -38,8 +38,7 @@ export default class ListaMensajes extends React.Component<
   componentDidMount() {
     const node = this.scroll0.current;
     if (node) {
-      console.log("holas");
-      node.scrollTo(0, 500);
+
       node.scrollIntoView({
         block: "end",
         behavior: "smooth",

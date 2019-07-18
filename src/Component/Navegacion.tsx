@@ -29,7 +29,9 @@ const NavigationAuth = () => (
     <div className="navbar-brand">
       <SignOutButton />
     </div>
-    
+    <div >
+      Desarrollado por PCLR
+    </div>
   </nav>
 
 

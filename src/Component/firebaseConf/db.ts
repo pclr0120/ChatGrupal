@@ -22,4 +22,6 @@ export const EnviarMensaje = (mensaje:string,usuario:string,fecha:string,fecha2:
 
 
 
+  export const GetUser = () => db.ref("users");
 export const GetMensajes = () => db.ref("Mensajes");
+

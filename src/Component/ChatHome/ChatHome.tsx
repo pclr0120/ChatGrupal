@@ -59,7 +59,7 @@ export default class ChatHome extends React.Component<
   }
 
 
-
+  ListUser:any[]=[];
   public onSubmit = (event: any) => {
     //alert(this.state.mensaje);
 
@@ -94,6 +94,14 @@ export default class ChatHome extends React.Component<
   };
   private TotalMensajes: number = 0;
   componentDidMount() {
+
+
+  db.GetUser().on("value",items=>{
+    items.forEach(element => {
+      this.ListUser.push(element);
+    });
+ 
+  });
     db.GetMensajes()
       .orderByChild("fecha2")
       .on("value", items => {
@@ -132,20 +140,23 @@ export default class ChatHome extends React.Component<
           {/* <UsercontextoLogin.Consumer >{val=><li>{val}</li>}</UsercontextoLogin.Consumer> */}
 
           <div className="card Cuerpo0">
-            <div className="card-header Titulo ">Bienvenido al Chat Grupal</div>
+            <div className="card-header Titulo ">Chat Grupal</div>
             <div className="container">
               <div className="row">
-                <div className="col-8" />
-                <div className="col-8" />
-                <div className="col" />
-
+               
                 <div className="col">
-                  <label className="TotalMensajes"> Mensajes:{this.TotalMensajes}</label>
+                  <label className="TotalMensajes"> Mensajes:{this.TotalMensajes} </label>
+                </div>
+               
+                <div className="col">
+                  <label className="TotalMensajes">  Usuarios:{this.ListUser.length} </label>
                 </div>
                 <div className="col" />
                 <div className="col" />
                 <div className="col ">
+                  
                   <div className="upload-btn-wrapper">
+                    
                     <button className="btn btn-outline-primary" disabled>
                       {" "}
                       <img src={camara} alt="LOGO" className="camara" />

@@ -1,4 +1,5 @@
 import * as React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import * as routes from "./Constantes/routes";
 import { Navigation } from "./Navegacion";
@@ -37,6 +38,7 @@ class AppComponent extends React.Component {
       
       <BrowserRouter>
         <div>
+          
           <Navigation />
       
           <Switch>
