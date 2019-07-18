@@ -1,0 +1,131 @@
+
+.area{
+  
+    min-height: 70%;
+  
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+ 
+
+}
+.Cuantos{
+     font-size: 20px;
+     color: rgb(12, 74, 145);
+}
+.Cuerpo0{
+  width: 100%;
+
+
+}
+.Mensaje{
+    color: black;
+    padding-left: 10px;
+    font-size: 18px;
+   
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.InputEnvio{
+width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+  background: rgb(197, 199, 201);
+}
+.He{
+
+    behavior: 'smooth';
+padding-left: 50%;
+
+}
+.col{
+  max-width:400px !important;;
+
+
+}
+.User{
+padding-left: 15px;
+text-align: center;
+color: rgb(255, 255, 255);
+  font-size: 12px;
+
+}
+.pa{
+  max-width: 90%;
+
+
+}
+.Fecha{
+  color: rgb(63, 62, 62);
+    font-size: 10px;
+    text-align: center;
+
+}
+
+.Cuerpo{
+padding-left: 10px;
+
+  background: rgba(23, 105, 212, 0.658);
+  border-radius: 20px;
+}
+
+.Cuerpo2{
+  padding-left: 10px;
+   
+    background: rgba(5, 170, 19, 0.788);
+    border-radius: 20px;
+  }
+
+.App-logoChat {
+    animation: App-logo-spin infinite 20s linear;
+    height: 10vmin;
+    pointer-events: none;
+  
+  }
+  .App-logoChatEnviar {
+    /* animation: App-logo-spin infinite 20s linear; */
+    transform: rotateZ(40deg);
+    height: 3vmin;
+    pointer-events: none;
+  }
+  .camara {
+    /* animation: App-logo-spin infinite 20s linear; */
+
+    height: 4vmin;
+    pointer-events: none;
+  }
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  /* <button
+                      
+  className="btn btn-outline-primary "
+
+>
+  <img
+    src={camara}
+    alt="LOGO"
+    className="camara"
+  />
+
+</button> */
